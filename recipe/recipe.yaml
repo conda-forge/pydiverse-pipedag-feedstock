@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,11 +23,10 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pydiverse-common >=0.3.4,<0.4 
-    - typing_extensions >=4.14.0,<5
+    - pydiverse-common >=0.3.5,<0.4
+    - typing_extensions >=4.14.1,<5
     - networkx >=3.4,<4
     - attrs >=25.3.0,<26
-    - pyparsing >=3.0
     - structlog >=25.4.0,<26
     - pynng >=0.8.1,<0.9
     - msgpack-python >=1.1.1,<2
@@ -39,13 +38,15 @@ requirements:
     - pyparsing >=3.2.3,<4
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
-    - pyarrow >=19.0.0,<21
+    - pyarrow >=20.0.0,<21
     - duckdb >=0.10.3,<2
     - duckdb-engine >=0.15.0,<0.16
     - polars >=1.2.1,<2
     - fsspec >=2025.5.1,<2026
     - universal_pathlib >=0.2.6,<0.3
   run_constraints:
+    - pydot >=4.0.0,<5
+    - adbc-driver-postgresql >=1.6.0,<2
     - filelock >=3.7.1
     - kazoo >=2.8.0
     - dask >=2022.1.0
@@ -54,20 +55,20 @@ requirements:
     - whenever >=0.8.5,<1.0
     - snowflake-sqlalchemy >=1.6.1
     - ibis-framework >=10.5.0
+    - ibis-mssql >=10.5.0
+    - ibis-postgres >=10.5.0
     - arrow-odbc >=8.1.1,<9
     - pyodbc >=5.2.0,<6
     - pytsql >=1.4.0,<2
     - bcpandas >=2.6.3,<3
-    - pydiverse-transform >=0.1.5,<0.2 | >=0.5.2,<0.6
+    - pydiverse-transform >=0.5.2,<0.6
     - pydiverse-colspec >=0.2.4,<0.3
     - dataframely >=1.2.1,<2
-    - pydot >=4.0.0,<5
     - ibm_db >=3.2.5
     - ibm_db_sa >=0.3.8
-    - adbc-driver-postgresql >=1.6.0,<2
-    - psycopg2 >=2.9.10
     - s3fs >=2025.5.1,<2026
     - boto3 >=1.38.13,<2
+    - xgboost >=3.0.2,<4
 
 tests:
   - python:
