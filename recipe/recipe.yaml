@@ -38,7 +38,7 @@ requirements:
     - pyparsing >=3.2.3,<4
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
-    - pyarrow >=20.0.0,<21
+    - pyarrow >=19.0.0,<21
     - duckdb >=0.10.3,<2
     - duckdb-engine >=0.15.0,<0.16
     - polars >=1.2.1,<2
@@ -68,7 +68,6 @@ requirements:
     - ibm_db_sa >=0.3.8
     - s3fs >=2025.5.1,<2026
     - boto3 >=1.38.13,<2
-    - xgboost >=3.0.2,<4
 
 tests:
   - python:
