@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -53,7 +53,7 @@ requirements:
     - whenever >=0.8.5,<1.0
     - snowflake-sqlalchemy >=1.6.1
     - ibis-framework >=10.5.0
-    - arrow-odbc >=8.1.1,<10
+    - arrow-odbc >=8.1.1,<11
     - pyodbc >=5.2.0,<6
     - pytsql >=1.4.0,<2
     - bcpandas >=2.6.3,<3
@@ -66,7 +66,7 @@ requirements:
     - adbc-driver-postgresql >=1.6.0,<2
     - adbc-driver-snowflake >=1.9.0,<2
     - psycopg2 >=2.9.10
-    - s3fs >=2025.5.1,<2026
+    - s3fs >=2025.5.1,<2027
     - boto3 >=1.38.13,<2
 
 tests:
