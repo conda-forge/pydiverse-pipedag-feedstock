@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: 0.12.14
+  version: 0.12.15
   python_min: '3.11'
 
 package:
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: 4a95371f7dc59c68e0336415bda12b506fb20d5d01de523466182beaa56c39b7
+  sha256: 675c20c9f7f270cd7c5cfa7bee93a493eaf50198a77b1329234d93481e4de77b
 
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -30,18 +30,18 @@ requirements:
     - structlog >=25.4.0,<27
     - pynng >=0.8.1,<0.9
     - msgpack-python >=1.1.1,<2
-    - packaging >=25.0,<26
+    - packaging >=25.0
     - python-box >=7.3.2,<8
     - pyyaml >=6.0.3,<7
-    - cryptography >=45.0.7,<50
+    - cryptography >=45.0.7,<51
     - click >=8.1.8,<9
     - pyparsing >=3.2.5,<4
-    - sqlalchemy >=1.4.54,<3
-    - pandas >=1.5.3,<4
-    - pyarrow >=19.0.0,<25
-    - python-duckdb >=0.10.3,<2
+    - sqlalchemy >=2.0.41,<2.1
+    - pandas >=2.3.0,<4
+    - pyarrow >=19.0.0,<26
+    - python-duckdb >=1.3.0,<2
     - duckdb-engine >=0.15.0,<0.16
-    - polars >=1.2.1,<2
+    - polars >=1.34.0,<3
     - fsspec >=2025.9.0,<2027
     - universal-pathlib <0.4,>=0.3.2
   run_constraints:
