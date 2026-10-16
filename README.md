@@ -44,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pydiverse-pipedag` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pydiverse-pipedag
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pydiverse-pipedag
 ```
 
-It is possible to list all of the versions of `pydiverse-pipedag` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pydiverse-pipedag
+# for installing globally
+pixi global install pydiverse-pipedag
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pydiverse-pipedag` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pydiverse-pipedag --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pydiverse-pipedag --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pydiverse-pipedag --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -80,6 +122,8 @@ mamba repoquery whoneeds pydiverse-pipedag --channel conda-forge
 # List dependencies of `pydiverse-pipedag`:
 mamba repoquery depends pydiverse-pipedag --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -150,6 +194,7 @@ Feedstock Maintainers
 
 * [@NMAC427](https://github.com/NMAC427/)
 * [@finn-rudolph](https://github.com/finn-rudolph/)
+* [@nicolasmueller](https://github.com/nicolasmueller/)
 * [@pavelzw](https://github.com/pavelzw/)
 * [@windiana42](https://github.com/windiana42/)
 
